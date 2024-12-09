@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amarante&family=DynaPuff:wght@400..700&family=Fascinate+Inline&display=swap" rel="stylesheet">
+
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        font-family: "Fascinate Inline", sans-serif;
+        background-color: #ffe5f0;
+      }
+
+      .home {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        min-height: 100%;
+      }
+
+      .div {
+        width: 1440px;
+        min-height: 100%;
+        position: relative;
+        background-color: #ffe5f0;
+      }
+
+
+      .overlap,
+      .vector,
+      .vector2,
+      .group,
+      .overlap-group,
+      .star,
+      .img,
+      .mask-group,
+      .overlap-2,
+      .overlap-wrapper,
+      .overlap-3 {
+        position: absolute;
+      }
+
+      /* Backgrounds */
+      .overlap {
+        width: 2004px;
+        height: 1861px;
+        top: -348px;
+        left: 0;
+      }
+
+      .vector,
+      .vector2 {
+        width: 1440px;
+        height: 857px;
+      }
+
+      .vector {
+        top: 348px;
+      }
+
+      .vector2 {
+        top: 1550px;
+      }
+
+      .overlap-2 {
+        width: 1440px;
+        height: 421px;
+        top: 1513px;
+        background-image: url(./img/image.png);
+        background-size: 100% 100%;
+      }
+
+      .group {
+        width: 1553px;
+        height: 1553px;
+        top: 0;
+        left: 451px;
+      }
+
+      .overlap-group {
+        width: 825px;
+        height: 1007px;
+        top: 348px;
+        left: 164px;
+        background-image: url(./img/star-1.png);
+        background-size: 100% 100%;
+      }
+
+      .star {
+        width: 731px;
+        height: 915px;
+        top: 0;
+        left: 95px;
+      }
+
+      .img,
+      .mask-group {
+        width: 370px;
+        height: 643px;
+      }
+
+      .img {
+        top: 1205px;
+        left: 174px;
+      }
+
+      .mask-group {
+        top: 1218px;
+        left: 148px;
+      }
+
+      /* Text */
+      .text-wrapper,
+      .info-text,
+      .p,
+      .text-wrapper-2,
+      .text-wrapper-4,
+      .text-wrapper-5,
+      .text-wrapper-6,
+      .text-wrapper-7 {
+        position: absolute;
+        color: #ffffff;
+        text-align: center;
+      }
+
+      .text-wrapper {
+        width: 249px;
+        top: 1303px;
+        left: 615px;
+        font-family: "Fascinate Inline";
+        font-weight: 400;
+        color: #ff8060;
+        font-size: 64px;
+      }
+
+      .info-text {
+        width: 683px;
+        top: 1434px;
+        left: 615px;
+        font-family: "DynaPuff";
+        font-weight: 400;
+        color: #a32a0c;
+        font-size: 24px;
+        letter-spacing: 1.20px;
+        line-height: 55px;
+      }
+
+      .text-wrapper-2 {
+        width: 655px;
+        top: 566px;
+        font-family: "Amarante";
+        font-weight: 400;
+        font-size: 128px;
+        text-shadow: 0px 4px 4px #00000040;
+      }
+
+      .p {
+        width: 1065px;
+        top: 237px;
+        left: 187px;
+        font-family: "Fascinate Inline";
+        font-size: 64px;
+        text-shadow: 0px 4px 4px #00000040;
+      }
+
+      /* Navbar container */
+      .overlap-wrapper {
+        position: fixed;
+        width: 100%;
+        height: 110px;
+        top: 0;
+        left: 0;
+        font-family: "Amarante";
+      }
+
+      .overlap-3 {
+        width: 100%;
+        height: 110px;
+        background-color: #ff8060;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .text-wrapper-4,
+      .text-wrapper-5,
+      .text-wrapper-6 {
+        width: 180px;
+        top: 41px;
+        font-family: "Amarante", sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        text-align: center;
+      }
+
+      .text-wrapper-4 {
+        left: 812px;
+      }
+
+      .text-wrapper-5 {
+        left: 1038px;
+      }
+
+      .text-wrapper-6 {
+        left: 1263px;
+      }
+
+      .text-wrapper-7 {
+        width: 63px;
+        top: 25px;
+        left: 71px;
+        font-family: "Amarante", sans-serif;
+        font-size: 48px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="home">
+      <div class="div">
+        <div class="overlap">
+          <img class="vector" src="wave 1 home.png" alt="gradient wave">
+          <div class="group">
+            <div class="overlap-group"><img class="star" src="Group 5.png" alt="star"></div>
+          </div>
+          <img class="img" src="Vector.png" alt="vector shadow">
+          <div class="text-wrapper">Hello!</div>
+          <p class="info-text">
+            Hi there! I am Amara, a GBDA student at the University of Waterloo. Welcome to my portfolio, where I showcase my work and share some of my experiences. I am passionate about the arts, both visual and theatrical, and I love traveling, baking, and spending time with friends. Thanks for visiting—I hope you enjoy exploring my site!
+          </p>
+          <div class="text-wrapper-2">Amara Damji</div>
+          <img class="mask-group" src="Mask group.png" alt="photo of me">
+        </div>
+        <img class="vector2" src="wave 2 home.png" alt="gradient wave">
+        <div class="overlap-2">
+          <p class="p">Come get a glimpse of my mind</p>
+        </div>
+        <div class="overlap-wrapper">
+          <div class="overlap-3">
+            <div class="text-wrapper-4">Graphic Design</div>
+            <div class="text-wrapper-5">Visual Art</div>
+            <div class="text-wrapper-6">Experiences</div>
+            <div class="text-wrapper-7">AD</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
