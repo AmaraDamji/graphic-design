@@ -140,67 +140,56 @@ Date retrieved: November 20
         object-fit: cover;
       }
 
-      /* Navbar container */
+      /* Navbar */
       .navbar {
         position: fixed;
         width: 100%;
         height: 110px;
         top: 0;
         left: 0;
-        font-family: "Amarante";
-      }
-
-      .navspace {
-        position: absolute;
-        width: 100%;
-        height: 110px;
         background-color: #ff8060;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
+        padding: 0 20px;
       }
 
-      .design,
-      .art,
-      .experience {
-        position: absolute;
-        width: 180px;
-        top: 41px;
+      .logo,
+      .nav-item {
         font-family: "Amarante", sans-serif;
         font-weight: 400;
-        font-size: 24px;
-        text-align: center;
-      }
-
-      .design {
-        left: 812px;
-      }
-
-      .art {
-        left: 1038px;
-      }
-
-      .experience {
-        left: 1263px;
+        font-size: 20px;
+        color: #fff;
+        text-decoration: none;
       }
 
       .logo {
-        position: absolute;
-        width: 63px;
-        top: 25px;
-        left: 71px;
-        font-family: "Amarante", sans-serif;
         font-size: 48px;
         text-align: center;
       }
 
-      a {
-        text-decoration: none;
-        color: #fff;
+      .logo:hover,
+      .nav-item:hover {
+        color: #a32a0c;
       }
 
-      a:hover {
-        color: #a32a0c;
+      .nav-items {
+        display: flex;
+        gap: 20px;
+        padding-right: 30px;
+      }
+
+      @media (max-width: 768px) {
+        .navbar {
+          flex-direction: column;
+          height: auto;
+          padding: 10px;
+        }
+
+        .nav-items {
+          flex-direction: column;
+          gap: 10px;
+        }
       }
     </style>
   </head>
@@ -225,15 +214,16 @@ Date retrieved: November 20
           This Cover Page was created for a group project, staying true to our product's palette of blues with an accent of red. The addition of red flowers in the background and the red outfits of the figures added pops of color, making the design more visually engaging while balancing the cool tones of the blues.
         </p>
         <img class="cover" src="cover.png" alt="blue title page">
+
         <div class="navbar">
-          <div class="navspace">
-            <div class="design"><a href="https://amaradamji.github.io/graphic-design/">Graphic Design</a></div>
-            <div class="art"><a href="https://amaradamji.github.io/art-gallery/">Visual Art</a></div>
-            <div class="experience"><a href="https://amaradamji.github.io/gallery/">
-                Personal Life</a></div>
-            <div class="logo"><a href="https://amaradamji.github.io/Homepage/">AD</a></div>
+          <a href="https://amaradamji.github.io/Homepage/" class="logo">AD</a>
+          <div class="nav-items">
+            <a href="https://amaradamji.github.io/graphic-design/" class="nav-item">Design</a>
+            <a href="https://amaradamji.github.io/art-gallery/" class="nav-item">Art</a>
+            <a href="https://amaradamji.github.io/gallery/" class="nav-item">Personal Life</a>
           </div>
         </div>
+
       </div>
     </div>
   </body>
